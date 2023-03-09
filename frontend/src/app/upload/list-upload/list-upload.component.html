@@ -1,0 +1,24 @@
+<div>
+Enter the file name to be searched:
+<br>
+<input type="text" name="caption" id="caption" class="form-controll " (change)="entered($event)"/>
+<br><br>
+<button class="button btn-info" *ngIf='showFile' (click)='showFiles(false)'>Hide Files</button>
+
+<button class="button btn-info" *ngIf='!showFile' (click)='showFiles(true)'>Show Files</button>
+
+
+
+<div [hidden]="!showFile">
+  <div class="panel panel-primary">
+    <div class="panel-heading">List of Files</div>
+    <div *ngFor="let file of data ">
+      <div class="panel-body">
+        <details-upload [fileUpload]='file.name'></details-upload>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+</div>

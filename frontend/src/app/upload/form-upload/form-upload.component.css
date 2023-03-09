@@ -1,0 +1,17 @@
+.file-upload {
+    border: 1px;
+    background-color: lightblue;
+}
+
+.btn-default {
+    border: black;
+}
+
+.btn-file {
+    border: black;
+}
+
+.upload {
+    border: 2px black;
+    align-content: center;
+}
